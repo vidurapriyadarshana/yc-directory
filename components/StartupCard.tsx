@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React from 'react';
 import { Button } from './ui/button';
 
-const StartupCard = ({ post }: { post: StartupTypeCard }) => {
+const StartupCard = ({ post }: { post: any }) => {
 
     const { _createdAt, views, author: { _id: authorId, name } ,_id, description , image, category, title } = post;
 

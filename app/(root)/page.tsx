@@ -3,7 +3,8 @@ import SearchForm from '../../components/SearchForm';
 import StartupCard from '@/components/StartupCard';
 
 const Page = async ({ searchParams }: { searchParams?: { query?: string } }) => {
-  const query = searchParams?.query || '';
+  const params = await searchParams;
+  const query = params?.query || '';
 
   const posts = [{
     _createdAt: new Date().toISOString(),
